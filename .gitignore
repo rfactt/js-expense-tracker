@@ -1,0 +1,17 @@
+# Sistema
+
+.DS_Store
+Thumbs.db
+
+# Vs CODE
+.vscode/
+
+#Logs
+*.log
+
+# Dependências futuras
+node_modules/
+
+# Cache
+dist/
+.cache/

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Gastos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <header class="app-header">
+      <h1>Controle de Gastos</h1>
+      <p class="subtitulo">Organize seus gastos de forma simples</p>
+    </header>
+
+    <div class="dashboard-grid">
+
+      <section class="card income-card">
+        <h2>Salário do mês</h2>
+
+        <form id="income-form">
+          <input 
+            type="number" 
+            id="monthly-income" 
+            placeholder="Ex: 1700" 
+            step="0.01" 
+            required
+          />
+
+          <button type="submit">Calcular orçamento</button>
+        </form>
+      </section>
+
+      <section class="card budget-card">
+        <h2>Regra 50/30/20</h2>
+
+            <div class="budget-summary">
+    <div class="budget-item">
+        <strong>Essenciais</strong>
+        <span id="essentials-budget">R$ 0,00</span>
+        <small>50% do salário</small>
+
+        <div class="progress-bar">
+        <div id="essentials-progress" class="progress-fill"></div>
+        </div>
+
+        <small id="essentials-used">0% utilizado</small>
+    </div>
+
+    <div class="budget-item">
+        <strong>Desejos</strong>
+        <span id="wants-budget">R$ 0,00</span>
+        <small>30% do salário</small>
+
+        <div class="progress-bar">
+        <div id="wants-progress" class="progress-fill"></div>
+        </div>
+
+        <small id="wants-used">0% utilizado</small>
+    </div>
+
+    <div class="budget-item">
+        <strong>Reserva</strong>
+        <span id="savings-budget">R$ 0,00</span>
+        <small>20% do salário</small>
+
+        <div class="progress-bar">
+        <div id="savings-progress" class="progress-fill"></div>
+        </div>
+
+        <small id="savings-used">0% utilizado</small>
+    </div>
+    </div>
+      </section>
+
+      <section class="card expense-card">
+        <h2>Adicionar gasto</h2>
+
+        <form id="expense-form">
+          <input
+            type="text"
+            id="expense-name"
+            placeholder="Nome do gasto"
+            required
+          />
+
+          <input
+            type="number"
+            id="expense-value"
+            placeholder="Valor do gasto"
+            step="0.01"
+            required
+          />
+
+          <select id="expense-category" required>
+            <option value="">Selecione a categoria</option>
+            <option value="essenciais">Essenciais</option>
+            <option value="desejos">Desejos</option>
+            <option value="reserva">Reserva</option>
+            <option value="outros">Outros</option>
+          </select>
+
+          <button type="submit">Adicionar</button>
+        </form>
+      </section>
+
+      <section class="card total-card">
+        <h2>Total gasto</h2>
+        <p id="total">R$ 0,00</p>
+      </section>
+
+      <section class="card list-card">
+        <h2>Lista de gastos</h2>
+        <ul id="expense-list"></ul>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
