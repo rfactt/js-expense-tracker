@@ -1,6 +1,6 @@
 # Controle de Gastos
 
-![Banner do Projeto](assets/readme/banner.png)
+![Banner do Projeto](assets/readme/banner-gastos.png)
 
 Aplicação web para controle de gastos pessoais, desenvolvida com HTML, CSS e JavaScript puro.
 
