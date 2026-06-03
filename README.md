@@ -58,7 +58,7 @@ js-expense-tracker/
 Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/js-expense-tracker.git
+git clone https://github.com/rfactt/js-expense-tracker.git
 ```
 
 Acesse a pasta:
